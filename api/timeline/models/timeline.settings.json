@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timelines",
+  "info": {
+    "name": "Timeline"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "from": {
+      "type": "date"
+    },
+    "to": {
+      "type": "date"
+    },
+    "html": {
+      "type": "richtext"
+    },
+    "left": {
+      "type": "boolean",
+      "default": false
+    },
+    "current": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
