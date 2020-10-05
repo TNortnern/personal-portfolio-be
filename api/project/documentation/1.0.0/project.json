@@ -528,7 +528,7 @@
           "description": {
             "type": "string"
           },
-          "images": {
+          "media": {
             "type": "array",
             "items": {
               "required": [
@@ -598,7 +598,7 @@
               }
             }
           },
-          "Role": {
+          "role": {
             "type": "string"
           },
           "importance": {
@@ -620,7 +620,7 @@
           "description": {
             "type": "string"
           },
-          "Role": {
+          "role": {
             "type": "string"
           },
           "importance": {
