@@ -1,0 +1,16 @@
+{
+  "kind": "singleType",
+  "collectionName": "hero_intros",
+  "info": {
+    "name": "Hero-intro"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}
