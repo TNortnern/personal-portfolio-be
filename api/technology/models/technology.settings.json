@@ -25,6 +25,10 @@
     },
     "importance": {
       "type": "integer"
+    },
+    "projects": {
+      "via": "technologies",
+      "collection": "project"
     }
   }
 }

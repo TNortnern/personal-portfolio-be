@@ -37,6 +37,11 @@
     },
     "completed": {
       "type": "date"
+    },
+    "technologies": {
+      "collection": "technology",
+      "via": "projects",
+      "dominant": true
     }
   }
 }
