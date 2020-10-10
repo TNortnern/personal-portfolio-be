@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "technologies",
   "info": {
-    "name": "technology"
+    "name": "technology",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "name": {
@@ -27,8 +29,8 @@
       "type": "integer"
     },
     "projects": {
-      "via": "technologies",
-      "collection": "project"
+      "collection": "project",
+      "via": "technologies"
     }
   }
 }

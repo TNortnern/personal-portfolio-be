@@ -635,6 +635,9 @@
                     "type": "string"
                   }
                 },
+                "published_at": {
+                  "type": "datetime"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -643,6 +646,9 @@
                 }
               }
             }
+          },
+          "published_at": {
+            "type": "datetime"
           }
         }
       },
@@ -659,6 +665,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "published_at": {
+            "type": "datetime"
           },
           "created_by": {
             "type": "string"

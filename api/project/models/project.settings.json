@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "projects",
   "info": {
-    "name": "Project"
+    "name": "Project",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "title": {
@@ -39,8 +41,8 @@
       "type": "date"
     },
     "technologies": {
-      "collection": "technology",
       "via": "projects",
+      "collection": "technology",
       "dominant": true
     }
   }

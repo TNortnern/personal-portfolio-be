@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/09/2020 6:36:25 PM"
+    "x-generation-date": "10/10/2020 9:45:20 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4138,6 +4138,9 @@
                     "type": "string"
                   }
                 },
+                "published_at": {
+                  "type": "datetime"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -4146,6 +4149,9 @@
                 }
               }
             }
+          },
+          "published_at": {
+            "type": "datetime"
           }
         }
       },
@@ -4174,6 +4180,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "published_at": {
+            "type": "datetime"
           },
           "created_by": {
             "type": "string"
@@ -4304,6 +4313,9 @@
                     "type": "string"
                   }
                 },
+                "published_at": {
+                  "type": "datetime"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -4312,6 +4324,9 @@
                 }
               }
             }
+          },
+          "published_at": {
+            "type": "datetime"
           }
         }
       },
@@ -4328,6 +4343,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "published_at": {
+            "type": "datetime"
           },
           "created_by": {
             "type": "string"
@@ -4364,6 +4382,9 @@
           "current": {
             "type": "boolean",
             "default": false
+          },
+          "published_at": {
+            "type": "datetime"
           }
         }
       },
@@ -4388,6 +4409,9 @@
           "current": {
             "type": "boolean",
             "default": false
+          },
+          "published_at": {
+            "type": "datetime"
           },
           "created_by": {
             "type": "string"
