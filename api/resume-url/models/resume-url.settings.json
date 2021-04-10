@@ -1,0 +1,16 @@
+{
+  "kind": "singleType",
+  "collectionName": "resume_urls",
+  "info": {
+    "name": "resume_url"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}

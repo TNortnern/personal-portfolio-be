@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/me-description",
+      "handler": "me-description.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/me-description",
+      "handler": "me-description.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/me-description",
+      "handler": "me-description.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "kind": "singleType",
+  "collectionName": "me_descriptions",
+  "info": {
+    "name": "me-description"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}
