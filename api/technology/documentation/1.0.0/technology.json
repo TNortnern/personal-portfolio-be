@@ -644,6 +644,9 @@
                 "roles": {
                   "type": "component"
                 },
+                "isActive": {
+                  "type": "boolean"
+                },
                 "created_by": {
                   "type": "string"
                 },

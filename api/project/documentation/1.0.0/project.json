@@ -666,6 +666,9 @@
                 }
               }
             }
+          },
+          "isActive": {
+            "type": "boolean"
           }
         }
       },
@@ -717,6 +720,9 @@
                 }
               }
             }
+          },
+          "isActive": {
+            "type": "boolean"
           },
           "created_by": {
             "type": "string"
