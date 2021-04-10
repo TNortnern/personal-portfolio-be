@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/10/2020 9:45:20 AM"
+    "x-generation-date": "04/10/2021 2:34:23 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4101,9 +4101,6 @@
               }
             }
           },
-          "role": {
-            "type": "string"
-          },
           "importance": {
             "type": "integer"
           },
@@ -4138,9 +4135,6 @@
                     "type": "string"
                   }
                 },
-                "published_at": {
-                  "type": "datetime"
-                },
                 "created_by": {
                   "type": "string"
                 },
@@ -4150,8 +4144,31 @@
               }
             }
           },
-          "published_at": {
-            "type": "datetime"
+          "isHeroku": {
+            "type": "boolean"
+          },
+          "hosted_url": {
+            "type": "string"
+          },
+          "code_url": {
+            "type": "string"
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -4161,9 +4178,6 @@
             "type": "string"
           },
           "description": {
-            "type": "string"
-          },
-          "role": {
             "type": "string"
           },
           "importance": {
@@ -4181,8 +4195,31 @@
               "type": "string"
             }
           },
-          "published_at": {
-            "type": "datetime"
+          "isHeroku": {
+            "type": "boolean"
+          },
+          "hosted_url": {
+            "type": "string"
+          },
+          "code_url": {
+            "type": "string"
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "created_by": {
             "type": "string"
@@ -4295,9 +4332,6 @@
                     "type": "string"
                   }
                 },
-                "role": {
-                  "type": "string"
-                },
                 "importance": {
                   "type": "integer"
                 },
@@ -4313,8 +4347,17 @@
                     "type": "string"
                   }
                 },
-                "published_at": {
-                  "type": "datetime"
+                "isHeroku": {
+                  "type": "boolean"
+                },
+                "hosted_url": {
+                  "type": "string"
+                },
+                "code_url": {
+                  "type": "string"
+                },
+                "roles": {
+                  "type": "component"
                 },
                 "created_by": {
                   "type": "string"
@@ -4324,9 +4367,6 @@
                 }
               }
             }
-          },
-          "published_at": {
-            "type": "datetime"
           }
         }
       },
@@ -4343,9 +4383,6 @@
             "items": {
               "type": "string"
             }
-          },
-          "published_at": {
-            "type": "datetime"
           },
           "created_by": {
             "type": "string"
@@ -4382,9 +4419,6 @@
           "current": {
             "type": "boolean",
             "default": false
-          },
-          "published_at": {
-            "type": "datetime"
           }
         }
       },
@@ -4409,9 +4443,6 @@
           "current": {
             "type": "boolean",
             "default": false
-          },
-          "published_at": {
-            "type": "datetime"
           },
           "created_by": {
             "type": "string"

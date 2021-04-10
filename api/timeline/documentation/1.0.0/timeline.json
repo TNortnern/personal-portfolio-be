@@ -541,9 +541,6 @@
           "current": {
             "type": "boolean",
             "default": false
-          },
-          "published_at": {
-            "type": "datetime"
           }
         }
       },
@@ -568,9 +565,6 @@
           "current": {
             "type": "boolean",
             "default": false
-          },
-          "published_at": {
-            "type": "datetime"
           },
           "created_by": {
             "type": "string"

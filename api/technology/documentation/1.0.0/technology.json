@@ -617,9 +617,6 @@
                     "type": "string"
                   }
                 },
-                "role": {
-                  "type": "string"
-                },
                 "importance": {
                   "type": "integer"
                 },
@@ -635,8 +632,17 @@
                     "type": "string"
                   }
                 },
-                "published_at": {
-                  "type": "datetime"
+                "isHeroku": {
+                  "type": "boolean"
+                },
+                "hosted_url": {
+                  "type": "string"
+                },
+                "code_url": {
+                  "type": "string"
+                },
+                "roles": {
+                  "type": "component"
                 },
                 "created_by": {
                   "type": "string"
@@ -646,9 +652,6 @@
                 }
               }
             }
-          },
-          "published_at": {
-            "type": "datetime"
           }
         }
       },
@@ -665,9 +668,6 @@
             "items": {
               "type": "string"
             }
-          },
-          "published_at": {
-            "type": "datetime"
           },
           "created_by": {
             "type": "string"

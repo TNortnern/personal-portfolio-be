@@ -28,9 +28,6 @@
       "plugin": "upload",
       "required": false
     },
-    "role": {
-      "type": "string"
-    },
     "importance": {
       "type": "integer"
     },
@@ -41,9 +38,23 @@
       "type": "date"
     },
     "technologies": {
-      "via": "projects",
       "collection": "technology",
+      "via": "projects",
       "dominant": true
+    },
+    "isHeroku": {
+      "type": "boolean"
+    },
+    "hosted_url": {
+      "type": "string"
+    },
+    "code_url": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "roles.roles"
     }
   }
 }

@@ -29,8 +29,8 @@
       "type": "integer"
     },
     "projects": {
-      "collection": "project",
-      "via": "technologies"
+      "via": "technologies",
+      "collection": "project"
     }
   }
 }
