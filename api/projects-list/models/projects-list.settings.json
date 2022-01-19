@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "projects_lists",
+  "info": {
+    "name": "projects-list"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "projects": {
+      "collection": "project"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/projects-list",
+      "handler": "projects-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/projects-list",
+      "handler": "projects-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/projects-list",
+      "handler": "projects-list.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

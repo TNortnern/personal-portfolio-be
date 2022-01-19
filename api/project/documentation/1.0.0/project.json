@@ -632,6 +632,9 @@
                     "type": "string"
                   }
                 },
+                "published_at": {
+                  "type": "datetime"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -669,6 +672,31 @@
           },
           "isActive": {
             "type": "boolean"
+          },
+          "category": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "datetime"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "published_at": {
+            "type": "datetime"
           }
         }
       },
@@ -723,6 +751,12 @@
           },
           "isActive": {
             "type": "boolean"
+          },
+          "category": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "datetime"
           },
           "created_by": {
             "type": "string"

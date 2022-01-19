@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/technologies": {
+    "/testimonials": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Technology"
+                    "$ref": "#/components/schemas/Testimonial"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Technology"
+          "Testimonial"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Technology"
+                  "$ref": "#/components/schemas/Testimonial"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Technology"
+          "Testimonial"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTechnology"
+                "$ref": "#/components/schemas/NewTestimonial"
               }
             }
           }
         }
       }
     },
-    "/technologies/count": {
+    "/testimonials/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Technology"
+          "Testimonial"
         ],
         "parameters": []
       }
     },
-    "/technologies/{id}": {
+    "/testimonials/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Technology"
+                  "$ref": "#/components/schemas/Testimonial"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Technology"
+          "Testimonial"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Technology"
+                  "$ref": "#/components/schemas/Testimonial"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Technology"
+          "Testimonial"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTechnology"
+                "$ref": "#/components/schemas/NewTestimonial"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Technology"
+          "Testimonial"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Technology": {
+      "Testimonial": {
         "required": [
           "id"
         ],
@@ -525,7 +525,10 @@
           "name": {
             "type": "string"
           },
-          "image": {
+          "body": {
+            "type": "string"
+          },
+          "avatar": {
             "required": [
               "id",
               "name",
@@ -592,97 +595,21 @@
               }
             }
           },
-          "importance": {
-            "type": "integer"
-          },
-          "projects": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "media": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "importance": {
-                  "type": "integer"
-                },
-                "started": {
-                  "type": "string"
-                },
-                "completed": {
-                  "type": "string"
-                },
-                "technologies": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "isHeroku": {
-                  "type": "boolean"
-                },
-                "hosted_url": {
-                  "type": "string"
-                },
-                "code_url": {
-                  "type": "string"
-                },
-                "roles": {
-                  "type": "component"
-                },
-                "isActive": {
-                  "type": "boolean"
-                },
-                "category": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "datetime"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "published_at": {
-            "type": "datetime"
+          "url": {
+            "type": "string"
           }
         }
       },
-      "NewTechnology": {
+      "NewTestimonial": {
         "properties": {
           "name": {
             "type": "string"
           },
-          "importance": {
-            "type": "integer"
+          "body": {
+            "type": "string"
           },
-          "projects": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "published_at": {
-            "type": "datetime"
+          "url": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
@@ -696,7 +623,7 @@
   },
   "tags": [
     {
-      "name": "Technology"
+      "name": "Testimonial"
     }
   ]
 }
