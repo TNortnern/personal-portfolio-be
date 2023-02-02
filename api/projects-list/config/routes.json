@@ -9,6 +9,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/getProjects",
+      "handler": "projects-list.getProjects",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
       "path": "/projects-list",
       "handler": "projects-list.update",
